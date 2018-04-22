@@ -54,6 +54,8 @@ const About = () => {
                             <div className="row">
                                 <div className="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white-light">
                                     <p>National Transaction Corporation is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>
+                                          <p>Designed and Developed by <a href="https://twitter.com/michaelcityboy"><i className="fa fa-twitter"></i>@michaelcityboy</a></p>
+
                                            </div>
                 </div>
             </div>

@@ -111,9 +111,33 @@ ul.form li{
     padding:12px;
     border-radius:10px;
     width:170px;
+    text-transform:uppercase;
 }
 .btn-btn:hover {
     background:transparent;
     border:1px solid gold;
     color:white
+}
+.overlay1{
+    background:#ffd70059;
+    width:100%;
+    height:100%;
+    display:flex;
+    color:white;
+    text-transform:uppercase;
+    align-items:center;
+    justify-content:center;
+}
+.overlay2{
+    background:rgba(0,0,0,.5);
+    width:100%;
+    height:100%;
+    display:flex;
+    color:white;
+    align-items:center;
+    justify-content:center;
+    text-transform:uppercase;
+}
+.title h5{
+    color:#e2bf00;
 }

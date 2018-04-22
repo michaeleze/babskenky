@@ -140,8 +140,20 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="row no-gutters">
-                        <div className="col-lg-6 order-lg-1 text-white showcase-img" style={{backgroundColor:'gold',backgroundImage: 'url("../img/bg-showcase-1.jpg")'}}></div>
-                    <div className="col-lg-6 order-lg-2 text-white showcase-img" style={{backgroundColor:'gold',backgroundImage: 'url("../img/bg-showcase-3.jpg")'}}></div>
+                        <div className="col-lg-6 order-lg-1 text-white showcase-img" style={{backgroundImage: 'url("../img/bg-showcase-1.jpg")'}}>
+                           <a href=''>
+                               <div className='overlay1'>
+                                <h3>This event is happening</h3>
+                                </div>
+                           </a>
+                        </div>
+                    <div className="col-lg-6 order-lg-2 text-white showcase-img" style={{backgroundImage: 'url("../img/bg-showcase-3.jpg")'}}>
+                        <a href=''>
+                            <div className='overlay2'>
+                            <h3>This event is happening</h3>
+                        </div>
+                        </a>
+                    </div>
                     </div>
                 </div>
             </section>
