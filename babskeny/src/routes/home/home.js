@@ -1,6 +1,46 @@
 import React from 'react';
 import './home.css'
 
+
+const Form = ()=> {
+   return(
+       <div>
+           <section className="testimonials bg-dark">
+               <div className="container form">
+                   <h2 className="mb-5 text-gold text-center text-uppercase">unleash your full potentials</h2>
+                   <div className="row">
+                       <div className={'col-lg-6 text-white text-justify '}>
+                           <h3 style={{lineHeight:'1.5'}}>Subscribe and get the lastest takeaway and insights delivered to your inbox</h3>
+                       </div>
+                       <div className={'col-lg-6 text-center'}>
+                           {/*<form onSubmit={this.handleSubmit}>*/}
+                           <form>
+                               <ul className={'form'}>
+                                   <li>
+                                       <input placeholder={'fullname'}/>
+                                   </li>
+                                   <li>
+                                       <input placeholder={'Email Address'}/>
+                                   </li>
+                                   <li>
+
+                                       <input className={'btn btn-gold'} type="submit" value="Submit" />
+                                   </li>
+                               </ul>
+
+                           </form>
+
+                       </div>
+
+                   </div>
+               </div>
+           </section>
+       </div>
+   )
+
+}
+
+
 const Home = () => {
 
     return(
@@ -12,7 +52,7 @@ const Home = () => {
                         <div className={'flx'}>
                         <h1 className="masthead-heading mb-0 text-uppercase">Work Less, Earn More</h1>
                         <h2 className="masthead-subheading mb-0">Will Rock Your Socks Off</h2>
-                        <a href="" className="btn btn-gold btn-xl rounded-pill mt-5">Learn More</a>
+                        <a href="" className="btn btn-gold btn-xl btn-btn mt-5">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -135,35 +175,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className="testimonials bg-dark">
-                <div className="container">
-                    <h2 className="mb-5 text-gold text-center text-uppercase">unleash your full potentials</h2>
-                    <div className="row">
-                        <div className={'col-lg-6 text-white text-justify '}>
-                            <h2>Subscribe and get the lastest takeaway and insights delivered to your inbox</h2>
-                        </div>
-                        <div className={'col-lg-6 text-center'}>
-                            <form>
-                                <ul className={'form'}>
-                                    <li>
-                                        <input placeholder={'fullname'}/>
-                                    </li>
-                                    <li>
-                                        <input placeholer={'Email Address'}/>
-                                    </li>
-                                    <li>
-
-                                        <button className={'btn btn-gold'} placeholder='SIGN UP ' type={'submit'}/>
-                                    </li>
-                                </ul>
-
-                            </form>
-
-                        </div>
-
-                    </div>
-                </div>
-            </section>
+         <Form/>
         </div>
     )
 }
