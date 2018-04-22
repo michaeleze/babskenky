@@ -6,43 +6,59 @@ const Home = () => {
     return(
 
         <div>
+            <header className="masthead text-left text-white" style={{ background:"url('../img/bg-home.jpg')",height:'750px'}}>
+                <div className="masthead-content">
+                    <div className="container">
+                        <div className={'flx'}>
+                        <h1 className="masthead-heading mb-0 text-uppercase">Work Less, Earn More</h1>
+                        <h2 className="masthead-subheading mb-0">Will Rock Your Socks Off</h2>
+                        <a href="" className="btn btn-gold btn-xl rounded-pill mt-5">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="bg-circle-1 bg-circle"></div>
+                <div className="bg-circle-2 bg-circle"></div>
+                <div className="bg-circle-3 bg-circle"></div>
+                <div className="bg-circle-4 bg-circle"></div>
+            </header>
 
-            <section className="features-icons bg-light text-center">
+            <section className="features-icons bg-light text-center" style={{padding:'50px 0'}}>
                 <div className="container">
+                    <h2 className={'text-uppercase text-center'} style={{margin:'10px 0 30px 0'}}> Featured Products</h2>
                     <div className="row">
                         <div className="col-lg-3">
                             <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                                 <div className="features-icons-icon d-flex">
-                                    <i className="icon-screen-desktop m-auto text-primary"></i>
+                                    <i className="icon-screen-desktop m-auto text-grey"></i>
                                 </div>
-                                <h3>Fully Responsive</h3>
+                                <h5>Blogging</h5>
                                 <p className="lead mb-0">This theme will look great on any device, no matter the size!</p>
                             </div>
                         </div>
                         <div className="col-lg-3">
                             <div className="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                                 <div className="features-icons-icon d-flex">
-                                    <i className="icon-layers m-auto text-primary"></i>
+                                    <i className="icon-calendar m-auto text-grey"></i>
                                 </div>
-                                <h3>Bootstrap 4 Ready</h3>
+                                <h5>Live Events</h5>
                                 <p className="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
                             </div>
                         </div>
                         <div className="col-lg-3">
                             <div className="features-icons-item mx-auto mb-0 mb-lg-3">
                                 <div className="features-icons-icon d-flex">
-                                    <i className="icon-check m-auto text-primary"></i>
+                                    <i className="icon-check m-auto text-grey"></i>
                                 </div>
-                                <h3>Easy to Use</h3>
+                                <h5>Make Money</h5>
                                 <p className="lead mb-0">Ready to use with your own content, or customize the source files!</p>
                             </div>
                         </div>
                         <div className="col-lg-3">
                             <div className="features-icons-item mx-auto mb-0 mb-lg-3">
                                 <div className="features-icons-icon d-flex">
-                                    <i className="icon-check m-auto text-primary"></i>
+                                    <i className="icon-book-open m-auto text-grey"></i>
                                 </div>
-                                <h3>Easy to Use</h3>
+                                <h5>Books</h5>
                                 <p className="lead mb-0">Ready to use with your own content, or customize the source files!</p>
                             </div>
                         </div>
@@ -84,8 +100,8 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="row no-gutters">
-                        <div className="col-lg-6 order-lg-1 text-white showcase-img" style={{backgroundImage: 'url("../img/bg-showcase-1.jpg")'}}></div>
-                        <div className="col-lg-6 order-lg-2 text-white showcase-img" style={{backgroundImage: 'url("../img/bg-showcase-3.jpg")'}}></div>
+                        <div className="col-lg-6 order-lg-1 text-white showcase-img" style={{backgroundColor:'gold',backgroundImage: 'url("../img/bg-showcase-1.jpg")'}}></div>
+                    <div className="col-lg-6 order-lg-2 text-white showcase-img" style={{backgroundColor:'gold',backgroundImage: 'url("../img/bg-showcase-3.jpg")'}}></div>
                     </div>
                 </div>
             </section>
@@ -93,7 +109,7 @@ const Home = () => {
 
             <section className="testimonials text-center bg-light">
                 <div className="container">
-                    <h2 className="mb-5">What people are saying...</h2>
+                    <h2 className="mb-5 text-uppercase">What people are saying...</h2>
                     <div className="row">
                         <div className="col-lg-4">
                             <div className="testimonial-item mx-auto mb-5 mb-lg-0">

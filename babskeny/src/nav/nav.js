@@ -14,7 +14,7 @@ const Nav = () => {
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <i className="icon-menu m-auto text-gold"></i>
                 </button>
-                <div className="collapse navbar-collapse" id="navbarResponsive">
+                <div className="collapse navbar-collapse text-uppercase" id="navbarResponsive">
                     <ul className="navbar-nav ml-auto">
                         <li className="nav-item">
                             <Link className="nav-link" to={'/'}>Home</Link>
@@ -36,19 +36,7 @@ const Nav = () => {
             </div>
         </nav>
 
-        <header className="masthead text-center text-white">
-        <div className="masthead-content">
-        <div className="container">
-        <h1 className="masthead-heading mb-0">One Page Wonder</h1>
-    <h2 className="masthead-subheading mb-0">Will Rock Your Socks Off</h2>
-    <a href="" className="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
-</div>
-</div>
-    <div className="bg-circle-1 bg-circle"></div>
-    <div className="bg-circle-2 bg-circle"></div>
-    <div className="bg-circle-3 bg-circle"></div>
-    <div className="bg-circle-4 bg-circle"></div>
-</header>
+
 </div>
 
     )

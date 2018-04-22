@@ -9,4 +9,4 @@ import './jquery';
 import './tether';
 import './popper';
 
-import '../../node_modules/bootstrap/dist/js/bootstrap.bundle';
+import '../../node_modules/bootstrap/dist/js/bootstrap';
