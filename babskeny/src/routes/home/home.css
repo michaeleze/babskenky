@@ -1,0 +1,67 @@
+
+@media (min-width: 768px) {
+    header.masthead {
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+    }
+    header.masthead h1 {
+        font-size: 3rem;
+    }
+}
+
+.showcase .showcase-text {
+    padding: 1rem;
+}
+
+.showcase .showcase-img {
+    min-height: 45rem;
+    background-size: cover;
+}
+
+@media (min-width: 768px) {
+    .showcase .showcase-text {
+        padding: 7rem;
+    }
+}
+
+.features-icons {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.features-icons .features-icons-item {
+    max-width: 20rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+    height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+    font-size: 4.5rem;
+}
+
+.features-icons .features-icons-item:hover .features-icons-icon i {
+    font-size: 5rem;
+}
+
+.testimonials {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.testimonials .testimonial-item {
+    max-width: 18rem;
+}
+
+.testimonials .testimonial-item img {
+    max-width: 12rem;
+    box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+.title{
+    margin-bottom:40px
+}
+ul.form li{
+    display:block;
+    padding:15px 0;
+}
