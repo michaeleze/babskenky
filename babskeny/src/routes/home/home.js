@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import './home.css'
 
 
@@ -46,13 +47,13 @@ const Home = () => {
     return(
 
         <div>
-            <header className="masthead text-left text-white" style={{ background:"url('../img/bg-home.jpg')",height:'750px'}}>
+            <header className="masthead text-left text-white" style={{ background:"url('../img/40922787524_0eb78e5bf6_k (1).jpg')",height:'750px'}}>
                 <div className="masthead-content">
                     <div className="container">
                         <div className={'flx'}>
                         <h1 className="masthead-heading mb-0 text-uppercase">Work Less, Earn More</h1>
                         <h2 className="masthead-subheading mb-0">Will Rock Your Socks Off</h2>
-                        <a href="" className="btn btn-gold btn-xl btn-btn mt-5">Learn More</a>
+                        <Link to={'/about'} className="btn btn-gold btn-xl btn-btn mt-5">Learn More</Link>
                         </div>
                     </div>
                 </div>

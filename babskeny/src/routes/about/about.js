@@ -18,8 +18,6 @@ const About = () => {
                                     <h5>Grab Your Copy Of</h5>
                                     <h1>The <span>Premium</span> Quality PSD Template For <span>free</span></h1>
 
-                                    <a target="_blank" href=""><button className="btn btn-default btn-home">Download<span><i className="fa fa-download"></i></span></button></a>
-
                                 </div>
                             </div>
                         </div>

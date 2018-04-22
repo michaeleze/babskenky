@@ -141,3 +141,8 @@ ul.form li{
 .title h5{
     color:#e2bf00;
 }
+.masthead {
+    background-origin: content-box !important;
+    background-attachment: fixed !important;
+    background-size: contain !important;
+}
