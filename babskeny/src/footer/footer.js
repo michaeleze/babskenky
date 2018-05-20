@@ -15,9 +15,14 @@ const About = () => {
                             <div className="container">
                                 <div className="row text-center text-xs-center text-sm-left text-md-left">
                                     <div className="col-xs-12 col-sm-4 col-md-4 offset-md-1">
-                                        <h6>Babskenky</h6>
+                                        <a className="" href=""><
+                                            div className={'img'}><img alt='img-babskenky' src={'img/BabskenkyLogo-01.png'}/></div>
+                                        </a>
                                         <ul className="list-unstyled quick-links">
-                                            <li><span>6126 Corner Stone Court Estate <br/> Ste. 200 San Diego CA, 92121  </span></li>
+                                            <li><span>BNY Holdings Incorporated<br/>
+            13801 Napoli Drive<br/>
+            Houston TX 77070
+ </span></li>
 
                                         </ul>
                                     </div>
@@ -53,8 +58,19 @@ const About = () => {
                                <hr/>
                             <div className="row">
                                 <div className="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white-light">
-                                    <p>National Transaction Corporation is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>
-                                          <p>Designed and Developed by <a href="https://twitter.com/michaelcityboy"><i className="fa fa-twitter"></i>@michaelcityboy</a></p>
+                                <p><ul className={'terms'}>
+                                    <li>
+                                        Privacy
+                                    </li>
+                                    <li>
+                                        Income Disclosure
+                                    </li>
+                                    <li>
+                                        Terms & Conditions
+                                    </li>
+                                    </ul></p>
+                                    <p>Copyright bnyholdings 2018. All rights reserved</p>
+                                    <p>Built with ReactJs by <span ><a href="https://twitter.com/michaelcityboy" style={{color:'#d1ac66'}}><i className="fa fa-twitter"></i>@michaelcityboy</a></span></p>
 
                                            </div>
                 </div>

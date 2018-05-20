@@ -6,9 +6,10 @@ import App from './App';
 // Insert this import line in your code:
 import './_include/bootstrap';
 import registerServiceWorker from './registerServiceWorker';
+import {BrowserRouter} from 'react-router-dom';
 
 ReactDOM.render(
-    <Router>
+    <BrowserRouter>
         <App />
-    </Router>, document.getElementById('root'));
+    </BrowserRouter>, document.getElementById('root'));
 registerServiceWorker();

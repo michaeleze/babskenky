@@ -11,7 +11,7 @@ section#footer .section-title {
     text-transform: uppercase;
 }
 #footer {
-    background:black !important;
+    background:#1e1e30 !important;
 }
 #footer h6{
     padding-bottom: 6px;
@@ -79,4 +79,11 @@ section#footer .section-title {
 }
 hr{
     background:white
+}
+.terms li{
+    display:inline-block;
+    padding:0 20px
+}
+li:hover{
+    color:#d1ac66 !important
 }

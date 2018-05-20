@@ -10,7 +10,7 @@ const Nav = () => {
         <nav className="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
 
             <div className="container">
-                <a className="navbar-brand" href="">BabSkenky</a>
+                <a className="navbar-brand" href=""><div className={'img'}><img alt='img-babskenky' src={'img/BabskenkyLogo-01.png'}/></div></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <i className="icon-menu m-auto text-gold"></i>
                 </button>
