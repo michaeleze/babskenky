@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import {Link} from 'react-router-dom'
 import './home.css'
-
+import Slider from "react-slick";
 
 const Form = ()=> {
    return(
@@ -69,6 +69,44 @@ class Home extends Component {
      render() {
 
          const {blurred} = this.state
+         let settings = {
+             dots: true,
+             autoplay: true,
+             infinite: true,
+             speed: 1000,
+             autoplaySpeed: 1000,
+             cssEase: "ease",
+             slidesToShow: 3,
+             slidesToScroll: 3,
+             responsive: [
+                 {
+                     breakpoint: 1024,
+                     settings: {
+                         slidesToShow: 2,
+                         slidesToScroll: 2,
+                         infinite: true,
+                         dots: true
+                     }
+                 },
+                 {
+                     breakpoint: 600,
+                     settings: {
+                         slidesToShow: 2,
+                         slidesToScroll: 2
+                     }
+                 },
+                 {
+                     breakpoint: 480,
+                     settings: {
+                         slidesToShow: 1,
+                         slidesToScroll: 1
+                     }
+                 }
+                 // You can unslick at a given breakpoint now by adding:
+                 // settings: "unslick"
+                 // instead of a settings object
+             ]
+         };
 
          return (
 
@@ -163,9 +201,8 @@ class Home extends Component {
                                      <h5>Do you have a full time job?</h5>
                                      <h2 className={'text-uppercase'}>Time Freedom</h2>
                                  </div>
-                                 <p className="lead mb-0">When you use a theme created by Start Bootstrap, you know that
-                                     the theme will look great on any device, whether it's a phone, tablet, or desktop
-                                     the page will behave responsively!</p>
+                                 <p className="lead mb-0 t-20">You can work WHEN you want, and you don’t have to wake up early and sit in traffic, spend more time with the people you love. You will have freedom over your time and schedule, to spend more time outdoors, or serving others through your favorite charity.
+                                 </p>
                              </div>
                          </div>
                          <div className="row no-gutters">
@@ -176,9 +213,7 @@ class Home extends Component {
                                      <h5>Do you want to earn more?</h5>
                                      <h2 className={'text-uppercase'}>Financial Freedom</h2>
                                  </div>
-                                 <p className="lead mb-0">Newly improved, and full of great utility classNamees,
-                                     Bootstrap 4 is leading the way in mobile responsive web development! All of the
-                                     themes on Start Bootstrap are now using Bootstrap 4!</p>
+                                 <p className="lead mb-0 t-20">You can earn between $1,250 to $20,000 per sale, while working from home in your spare time! You can pay off debt, put money away for retirement, help your kids or grandkids pay for college, and build a legacy.</p>
                              </div>
                          </div>
                          <div className="row no-gutters">
@@ -189,62 +224,119 @@ class Home extends Component {
                                      <h5>Would like to work at your comfort?</h5>
                                      <h2 className={'text-uppercase'}>Location Freedom</h2>
                                  </div>
-                                 <p className="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for
-                                     users who demand some deeper customization options. Out of the box, just add your
-                                     content and images, and your new landing page will be ready to go!</p>
+                                 <p className="lead mb-0 t-20">Work WHERE you want, so you can work from home or while traveling as long as there is a computer/mobile device and a wifi
+                                 </p>
                              </div>
                          </div>
                          <div className="row no-gutters">
-                             <div className="col-lg-6 order-lg-1 text-white showcase-img"
-                                  style={{backgroundImage: 'url("../img/bg-showcase-1.jpg")'}}>
-                                 <a href=''>
-                                     <div className='overlay1'>
-                                         <h3 className={'text-center'}>This event is happening</h3>
-                                     </div>
-                                 </a>
+                             <div className="col-lg-4 order-lg-1 text-white showcase-img"
+                                  >
+                                 <a href="http://track.mobetrack.com/aff_c?offer_id=1724&aff_id=3071558">
+                                     <img src="https://mobeoffice.com/members/wp-content/uploads/2017/02/WiFi-Millionaire-350x350-a.jpg" alt={'baba'} /></a>
+
                              </div>
-                             <div className="col-lg-6 order-lg-2 text-white showcase-img"
-                                  style={{backgroundImage: 'url("../img/bg-showcase-3.jpg")'}}>
-                                 <a href=''>
-                                     <div className='overlay2'>
-                                         <h3 className={'text-center'}>This event is happening</h3>
-                                     </div>
+                             <div className="col-lg-4 order-lg-2 text-white showcase-img"
+                                 >
+                                 <a href="http://track.mobetrack.com/aff_c?offer_id=1724&aff_id=3071558">
+                                     <img src="https://mobeoffice.com/members/wp-content/uploads/2017/02/WiFi-Millionaire-350x350-a.jpg" alt={'baba'} /></a>
+                             </div>
+                             <div className="col-lg-4 order-lg-3 text-white showcase-img"
+                                  >
+                                 <a href="http://track.mobetrack.com/aff_c?offer_id=1724&aff_id=3071558">
+                                     <img src="https://mobeoffice.com/members/wp-content/uploads/2017/02/WiFi-Millionaire-350x350-a.jpg" alt={'baba'} />
                                  </a>
                              </div>
                          </div>
                      </div>
                  </section>
 
+                 <section id={'mission'}>
+                     <div className="container-fluid no-p"  style={{backgroundImage: 'url("../img/bg-showcase-1.jpg")',backgroundSize:'cover',backgroundRepeat:'no-repeat',backgroundAttachment:'fixed',
+                         height:'35rem'}}>
+                         <div className="row p-50">
+                             <div className="col-lg-12 text-white showcase-img">
+                                 <div className={'flex'}>
+                                     <div className={'tp-20'}>
+                                 <h2 className={'max-w-400'}>
+                                     My Mission
+                                 </h2>
+                                 <p className={'max-w-400 p-20 text-white'}>
+                                     To help 1000 people escape the rat race, to live life on their own terms and fulfil their true destinies
+                                 </p>
+                                 </div>
+                                 </div>
+                             </div>
+                         </div>
+
+                     </div>
+
+                 </section>
+
 
                  <section className="testimonials text-center bg-light">
-                     <div className="container">
+                     <div className="container-fluid">
                          <h2 className="mb-5 text-uppercase">What people are saying...</h2>
-                         <div className="row">
-                             <div className="col-lg-4">
-                                 <div className="testimonial-item mx-auto mb-5 mb-lg-0">
-                                     <img className="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg"
-                                          alt=""/>
-                                     <h5>Margaret E.</h5>
-                                     <p className="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+                         {/*<div className="row">*/}
+
+                             {/*<div className="col-lg-4">*/}
+                                 {/*<div className="testimonial-item mx-auto mb-5 mb-lg-0">*/}
+                                     {/*<img className="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg"*/}
+                                          {/*alt=""/>*/}
+                                     {/*<h5>Ricardo Pinto</h5>*/}
+                                     {/*<p className="font-weight-light mb-0">"Baba is a highly innovative Strategist. I had the pleasure of working with Baba to develop, build and scale a major project at a major American fortune 500.<br/></p>*/}
+                                         {/*/!*During this period Baba proved a big-picture thinker, and an effective cross-functional collaborator. <br/>*!/*/}
+                                         {/*/!*His passion and relentless drive and contributions were essential to the success of the project we delivered together. Baba is terrific with challenging assignments, tight deadlines and works well under difficult conditions. ,*!/*/}
+                                         {/*/!*<br/>*!/*/}
+                                         {/*/!*I would love to have the opportunity to work with Baba again."</p>*!/*/}
+                                 {/*</div>*/}
+                             {/*</div>*/}
+                             {/*<div className="col-lg-4">*/}
+                                 {/*<div className="testimonial-item mx-auto mb-5 mb-lg-0">*/}
+                                     {/*<img className="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg"*/}
+                                          {/*alt=""/>*/}
+                                     {/*<h5>Stanley Rogers</h5>*/}
+                                     {/*<p className="font-weight-light mb-0">"Simply put... Baba is an exceptional team player with a brilliant mind and delivers value to the business every single day!"</p>*/}
+                                 {/*</div>*/}
+                             {/*</div>*/}
+                             {/*<div className="col-lg-4">*/}
+                                 {/*<div className="testimonial-item mx-auto mb-5 mb-lg-0">*/}
+                                     {/*<img className="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg"*/}
+                                          {/*alt=""/>*/}
+                                     {/*<h5>Emil Martinez</h5>*/}
+                                     {/*<p className="font-weight-light mb-0">"I have had the pleasure of working with Baba over the past few years and have found him to be highly intelligent, flexible, open to alternative ideas/approaches and most of all passionate in his desire to ensure delivery excellence to all stakeholders"</p>*/}
+                                 {/*</div>*/}
+                             {/*</div>*/}
+                         {/*</div>*/}
+                         <div className={'row'}>
+                             <div className={'col-lg-12'}>
+                             <Slider {...settings}>
+                                 <div className={'pd-50'}>
+                                    <div style={{padding:'5rem'}}> <img className="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg"
+                                               alt=""/></div>
+                                     <h5>Stanley Rogers</h5>
+                                     <p className="font-weight-light mb-0">"Simply put... Baba is an exceptional team player with a brilliant mind and delivers value to the business every single day!"</p>
                                  </div>
-                             </div>
-                             <div className="col-lg-4">
-                                 <div className="testimonial-item mx-auto mb-5 mb-lg-0">
-                                     <img className="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg"
-                                          alt=""/>
-                                     <h5>Fred S.</h5>
-                                     <p className="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to
-                                         create lots of super nice landing pages."</p>
+                                 <div className={'pd-50'}>
+                                     <div style={{padding:'5rem'}}>  <img className="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg"
+                                                                          alt=""/></div>
+                                     <h5>Ricardo Pinto</h5>
+                                     <p className="font-weight-light mb-0">"Baba is a highly innovative Strategist. I had the pleasure of working with Baba to develop, build and scale a major project at a major American fortune 500.<br/></p>
                                  </div>
-                             </div>
-                             <div className="col-lg-4">
-                                 <div className="testimonial-item mx-auto mb-5 mb-lg-0">
-                                     <img className="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg"
-                                          alt=""/>
-                                     <h5>Sarah W.</h5>
-                                     <p className="font-weight-light mb-0">"Thanks so much for making these free
-                                         resources available to us!"</p>
+                                 <div className={'pd-50'}>
+                                     <div style={{padding:'5rem'}}> <img className="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg"
+                                                                         alt=""/></div>
+                                     <h5>Emil Martinez</h5>
+                                     <p className="font-weight-light mb-0">"I have had the pleasure of working with Baba over the past few years and have found him to be highly intelligent, flexible, open to alternative ideas/approaches and most of all passionate in his desire to ensure delivery excellence to all stakeholders"</p>
+
                                  </div>
+                                 <div className={'pd-50'}>
+                                     <div style={{padding:'5rem'}}><img className="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg"
+                                                                         alt=""/></div>
+                                     <h5>Carl Noon </h5>
+                                     <p className="font-weight-light mb-0">"  Am here with Baba, a friend of mine. After coming to my workshop, listening and taking action. He became very successful within a short period of time. This is what happens when you apply the knowledge like Baba did..."</p>
+
+                                 </div>
+                             </Slider>
                              </div>
                          </div>
                      </div>

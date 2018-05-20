@@ -30,7 +30,7 @@ const About = () => {
                                         <h6>Quick links</h6>
                                         <ul className="list-unstyled quick-links">
                                             <li><a href="">Home</a></li>
-                                            <li><a href="">About</a></li>
+                                            <li><a href="">About Baba</a></li>
                                             <li><a href="">FAQ</a></li>
                                             <li><a href="">Get Started</a></li>
                                             <li><a href="">Videos</a></li>

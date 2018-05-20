@@ -15,8 +15,8 @@ const About = () => {
                             <div className="col-md-12">
                                 <div className="home-content">
 
-                                    <h5>Grab Your Copy Of</h5>
-                                    <h1>The <span>Premium</span> Quality PSD Template For <span>free</span></h1>
+                                    <h5>My Story</h5>
+                                    <h1>Why am on a <span>mission</span> to change the world, <span>one person </span>at a time </h1>
 
                                 </div>
                             </div>

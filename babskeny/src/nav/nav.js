@@ -9,7 +9,7 @@ const Nav = () => {
 <div>
         <nav className="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
 
-            <div className="container">
+            <div className="container-fluid">
                 <a className="navbar-brand" href=""><div className={'img'}><img alt='img-babskenky' src={'img/BabskenkyLogo-01.png'}/></div></a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <i className="icon-menu m-auto text-gold"></i>
@@ -20,7 +20,7 @@ const Nav = () => {
                             <Link className="nav-link" to={'/'}>Home</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to={'/about'}>Know Us</Link>
+                            <Link className="nav-link" to={'/about'}>About Baba</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to={'/store'}>Store</Link>

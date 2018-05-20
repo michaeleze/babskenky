@@ -228,7 +228,7 @@ section .subtitle-half h5 {
     margin: auto;
 }
 .overlay-img {
-    background: rgba(0, 0, 0, .55);
+    background: #1e1e30f5;
     width: 100%;
     overflow:hidden;
 }
