@@ -13,9 +13,7 @@ const About = () => {
 
                         <div className="row">
                             <div className="col-md-12">
-                                <div className="home-content">
-
-                                    <h5>My Story</h5>
+                                <div className="ab-home-content">
                                     <h1>Why am on a <span>mission</span> to change the world, <span>one person </span>at a time </h1>
 
                                 </div>
@@ -29,14 +27,15 @@ const About = () => {
     
             <section id="about" className="sections">
 
-                <div className="heading-content text-center">
+                <div className="ab-heading-content text-center">
 
-                    <h3>Know About Us</h3>
+                    <h3>About Baba</h3>
 
                     <div className="separator"></div>
 
-                    <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim </p>
-
+                   <p>Baba Nureni-Yusuf, often called babskenky is an author, life-coach, mentor, global traveller, digital media expert, internet and new economy entrepreneur, and public speaker specializing in digital economy strategy, digital marketing, mind-set and wealth creation. </p>
+                <br/>
+                    <p>He began his journey in Lagos, Nigeria. He studied computer engineering at Obafemi Awolowo University, Ile-Ife. Upon graduated, we was one of the hand selected talent at  been a columnist and a blogger for reputable newspapers and global platforms. With over fifteen years of experience working Corporate Strategy, Marketing and Sales in three different continents - Africa, Europe and North America for some of the worlds biggest global multinational corporation, Baba set up his first company in 2000 promoting products for a multi-level marketing franchise.</p>
                 </div>
 
                 <div className="about-bg">
@@ -44,10 +43,10 @@ const About = () => {
 
                         {/* Example row of columns */}
                         <div className="row">
-                            <div className="col-md-6 col-sm-6 col-xs-6">
+                            <div className="col-md-8">
                                 <div className="about-content">
 
-                                    <h3>We Are the best</h3>
+                                    <h3>Babskenky</h3>
                                     <p>Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat </p>
                                     <p>Volutpat wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum </p>
 

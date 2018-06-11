@@ -30,6 +30,10 @@ a:focus {
     text-decoration: none;
     outline: none;
 }
+h3{
+    font-family:'Arapey', serif !important;
+    font-size:40px !important
+}
 a,
 button,
 a span {
@@ -228,9 +232,12 @@ section .subtitle-half h5 {
     margin: auto;
 }
 .overlay-img {
+    max-height:380px;
     background: #1e1e30f5;
     width: 100%;
     overflow:hidden;
+    background-attachment:fixed;
+
 }
 .no-padding {
     padding: 0 !important;
@@ -248,7 +255,7 @@ Separator
     height: 5px;
     width: 85px;
     margin: auto;
-    background: #7b6c63;
+    background: rgb(209, 172, 102);
     margin-bottom:50px;
 }
 
@@ -269,8 +276,8 @@ Button
 .btn-primary.disabled,
 .btn-primary.disabled:hover {
     color: #ffffff;
-    background-color: #f56363;
-    border-color: #f56363;
+    background-color: rgb(209, 172, 102);
+    border-color: rgb(209, 172, 102);
 }
 
 .btn{
@@ -381,35 +388,35 @@ input:-ms-input-placeholder {
     font-weight:500;
 }
 /*For Global Section*/
-.heading-content {
+.ab-heading-content {
     margin-bottom: 4rem;
     margin-top:20px;
 }
-.heading-content  h3{
+.ab-heading-content  h3{
     text-transform:uppercase;
     color:#7b6c63;
     font-weight: 500;
     margin-bottom:50px;
     font-size: 40px;
 }
-.heading-content  p{
+.ab-heading-content  p{
     color:#212121;
-    width: 35%;
+    width: 80%;
     margin: 0 auto;
     line-height: 30px;
 }
 
-.heading-content2 {
+.ab-heading-content2 {
     margin-bottom: 4rem;
 }
-.heading-content2  h4{
+.ab-heading-content2  h4{
     text-transform:uppercase;
-    color:#7b6c63;
+    color:rgb(209, 172, 102);
     font-weight: 500;
     margin-bottom: 25px;
     font-size: 24px;
 }
-.heading-content2  p{
+.ab-heading-content2  p{
     color:#212121;
     width: 82%;
     margin: 0 auto;
@@ -440,18 +447,18 @@ input:-ms-input-placeholder {
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-    color:#7b6c63;
+    color:rgb(209, 172, 102);
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
     background-color:transparent;
-    border-bottom:3px solid #7b6c63;
+    border-bottom:3px solid rgb(209, 172, 102);
     color:#fff;
 }
 
 /*For Home Section*/
 
 .home{
-    background:gold;
+    background:url('%PUBLIC_URL%/img/mii.JPG');
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
@@ -459,24 +466,24 @@ input:-ms-input-placeholder {
     width: 100%;
     overflow: hidden;
 }
-.home-content{
-    margin:180px 0;
+.ab-home-content{
+    margin:120px 0;
     color:#fff;
     text-transform:uppercase;
     width:75%;
 }
-.home-content h5{
+.ab-home-content h5{
     font-weight:900px;
     font-size:24px;
 }
 
-.home-content h1{
+.ab-home-content h1{
     font-size:65px;
     font-weight:400;
 }
-.home-content h1 span{
+.ab-home-content h1 span{
     font-weight:600;
-    color:#7b6c63;
+    color:rgb(209, 172, 102);
 }
 
 .btn-home{
@@ -506,8 +513,7 @@ input:-ms-input-placeholder {
     padding:80px 0;
 }
 .about-content h3{
-    color:#7b6c63;
-    font-size:24px;
+    font-size:40px;
     text-transform:uppercase;
     font-weight:400;
 }
@@ -521,7 +527,7 @@ input:-ms-input-placeholder {
 /*For service Area*/
 
 .service-content i{
-    color:#7b6c63;
+    color:rgb(209, 172, 102);
     font-size:25px;
 }
 .service-content h5{
@@ -711,7 +717,7 @@ input:-ms-input-placeholder {
     -moz-transition:.5s;
 }
 .social a i:hover{
-    background:#7b6c63;
+    background:rgb(209, 172, 102);
 }
 
 .team-details:hover .social{
@@ -759,7 +765,7 @@ input:-ms-input-placeholder {
     margin-top:50px;
 }
 .client-content .client-basicinfo h6{
-    color:#7b6c63;
+    color:rgb(209, 172, 102);
     font-size:18px;
 }
 .client-content .client-basicinfo a{
@@ -1286,7 +1292,7 @@ input:-ms-input-placeholder {
     height:40px;
     border-radius:100%;
     text-align:center;
-    color:#7b6c63;
+    color:rgb(209, 172, 102);
     font-size:30px;
     background:#c8cfd0;
     position:fixed;

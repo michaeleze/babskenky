@@ -12,7 +12,7 @@ const Views = () => {
     return(
         <div>
             <Switch>
-                <Route exact={true} path="/" component={Home}/>
+                <Route exact={true} path="/" render={(props)=><Home {...props}/>}/>
                 {/*<IndexRoute component={Portfolio}/>*/}
                 <Route path="/about" component={About}/>
                 <Route path="/contact" component={Contact}/>

@@ -58,7 +58,7 @@ const About = () => {
                                <hr/>
                             <div className="row">
                                 <div className="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white-light">
-                                <p><ul className={'terms'}>
+                                <ul className={'terms'}>
                                     <li>
                                         Privacy
                                     </li>
@@ -68,7 +68,7 @@ const About = () => {
                                     <li>
                                         Terms & Conditions
                                     </li>
-                                    </ul></p>
+                                    </ul>
                                     <p>Copyright bnyholdings 2018. All rights reserved</p>
                                     <p>Built with ReactJs by <span ><a href="https://twitter.com/michaelcityboy" style={{color:'#d1ac66'}}><i className="fa fa-twitter"></i>@michaelcityboy</a></span></p>
 

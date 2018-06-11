@@ -43,8 +43,8 @@ const Form = ()=> {
 
 
 class Home extends Component {
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
         this.state = {
             blurred:''
         }
@@ -67,13 +67,13 @@ class Home extends Component {
     }
 
      render() {
-
+   console.log(this.props)
          const {blurred} = this.state
          let settings = {
              dots: true,
              autoplay: true,
              infinite: true,
-             speed: 1000,
+             speed: 2000,
              autoplaySpeed: 1000,
              cssEase: "ease",
              slidesToShow: 3,
@@ -102,9 +102,7 @@ class Home extends Component {
                          slidesToScroll: 1
                      }
                  }
-                 // You can unslick at a given breakpoint now by adding:
-                 // settings: "unslick"
-                 // instead of a settings object
+    
              ]
          };
 
@@ -112,7 +110,7 @@ class Home extends Component {
 
              <div>
                  <header className="masthead text-left text-white" style={{
-                     background: "url('../img/40922787524_0eb78e5bf6_k (1).jpg')",
+                     background: "url('../img/26561643908_d4f84400ce_k (1) (1).jpg')",
                      backgroundAttachment: 'fixed',
                      height: '1000px',
                      filter:blurred
@@ -128,13 +126,13 @@ class Home extends Component {
                      <div className="masthead-content">
                          <div className="container">
                              <div className={'flx'}>
-                                 <div style={{marginTop: '25vh'}}>
+                                 <div style={{marginTop: '35vh'}}>
                                      <h1 className="masthead-heading mb-0 text-uppercase t-62 text-center">Work Less, Earn
                                          More</h1>
                                      <h4 className="masthead-subheading mb-0 text-center">Other people should not determine your worth. Stop being a paid slave !
 </h4>
                                      <div className={'text-center'}>
-                                         <Link to={'/about'} className="btn abt-btn">Read More<span><i class="fa fa-long-arrow-right"></i></span></Link>
+                                         <Link to={'/about'} className="btn abt-btn">Read More<span><i className="fa fa-long-arrow-right"></i></span></Link>
                                      </div>
                                  </div>
                              </div>
@@ -152,8 +150,8 @@ class Home extends Component {
                                          <i className="icon-screen-desktop m-auto text-grey"></i>
                                      </div>
                                      <h5>Blogging</h5>
-                                     <p className="lead mb-0">This theme will look great on any device, no matter the
-                                         size!</p>
+                                     <p className="lead mb-0">Featuring the latest build of the new Bootstrap 4
+                                         framework!</p>
                                  </div>
                              </div>
                              <div className="col-lg-3">
@@ -167,13 +165,13 @@ class Home extends Component {
                                  </div>
                              </div>
                              <div className="col-lg-3">
-                                 <div className="features-icons-item mx-auto mb-0 mb-lg-3">
+                                 <div P="features-icons-item mx-auto mb-0 mb-lg-3">
                                      <div className="features-icons-icon d-flex">
                                          <i className="icon-check m-auto text-grey"></i>
                                      </div>
                                      <h5>Make Money</h5>
-                                     <p className="lead mb-0">Ready to use with your own content, or customize the
-                                         source files!</p>
+                                     <p className="lead mb-0">Featuring the latest build of the new Bootstrap 4
+                                         framework!</p>
                                  </div>
                              </div>
                              <div className="col-lg-3">
@@ -182,8 +180,8 @@ class Home extends Component {
                                          <i className="icon-book-open m-auto text-grey"></i>
                                      </div>
                                      <h5>Books</h5>
-                                     <p className="lead mb-0">Ready to use with your own content, or customize the
-                                         source files!</p>
+                                     <p className="lead mb-0">Featuring the latest build of the new Bootstrap 4
+                                         framework!</p>
                                  </div>
                              </div>
                          </div>
@@ -194,9 +192,9 @@ class Home extends Component {
                      <div className="container-fluid p-0">
                          <div className="row no-gutters">
 
-                             <div className="col-lg-6 order-lg-2 text-white showcase-img"
-                                  style={{backgroundImage: 'url("../img/bg-showcase-1.jpg")'}}></div>
-                             <div className="col-lg-6 order-lg-1 my-auto showcase-text">
+                             <div className="col-md-6 order-lg-2 text-white showcase-img"
+                                  style={{backgroundImage: 'url("../img/time.JPG")'}}></div>
+                             <div className="col-md-6 order-lg-1 my-auto showcase-text">
                                  <div className={'title'}>
                                      <h5>Do you have a full time job?</h5>
                                      <h2 className={'text-uppercase'}>Time Freedom</h2>
@@ -206,9 +204,9 @@ class Home extends Component {
                              </div>
                          </div>
                          <div className="row no-gutters">
-                             <div className="col-lg-6 text-white showcase-img"
-                                  style={{backgroundImage: 'url("../img/bg-showcase-2.jpg")'}}></div>
-                             <div className="col-lg-6 my-auto showcase-text">
+                             <div className="col-md-6 text-white showcase-img"
+                                  style={{backgroundImage: 'url("../img/finance.JPG")'}}></div>
+                             <div className="col-md-6 my-auto showcase-text">
                                  <div className={'title'}>
                                      <h5>Do you want to earn more?</h5>
                                      <h2 className={'text-uppercase'}>Financial Freedom</h2>
@@ -218,7 +216,7 @@ class Home extends Component {
                          </div>
                          <div className="row no-gutters">
                              <div className="col-lg-6 order-lg-2 text-white showcase-img"
-                                  style={{backgroundImage: 'url("../img/bg-showcase-3.jpg")'}}></div>
+                                  style={{backgroundImage: 'url("../img/lo.JPG")'}}></div>
                              <div className="col-lg-6 order-lg-1 my-auto showcase-text">
                                  <div className={'title'}>
                                      <h5>Would like to work at your comfort?</h5>
@@ -250,9 +248,10 @@ class Home extends Component {
                      </div>
                  </section>
 
-                 <section id={'mission'}>
-                     <div className="container-fluid no-p"  style={{backgroundImage: 'url("../img/bg-showcase-1.jpg")',backgroundSize:'cover',backgroundRepeat:'no-repeat',backgroundAttachment:'fixed',
-                         height:'35rem'}}>
+                 <section id={'mission'} style={{backgroundImage: 'url("../img/mii.JPG")',backgroundSize:'cover',backgroundRepeat:'no-repeat',backgroundAttachment:'fixed',
+                         height:'35rem',position:'relative'}}>
+                         <div className='blackOverlay'></div>
+                     <div className="container no-p text-center"  >
                          <div className="row p-50">
                              <div className="col-lg-12 text-white showcase-img">
                                  <div className={'flex'}>
@@ -263,6 +262,7 @@ class Home extends Component {
                                  <p className={'max-w-400 p-20 text-white'}>
                                      To help 1000 people escape the rat race, to live life on their own terms and fulfil their true destinies
                                  </p>
+                                 <p className={'max-w-400 p-20 text-white'}>My passion is to transfer this knowledge and to continue to replicate this knowledge with individuals that are willing to earn their own freedom. After all, if I can do this, then you definitely can!</p>
                                  </div>
                                  </div>
                              </div>
@@ -276,37 +276,7 @@ class Home extends Component {
                  <section className="testimonials text-center bg-light">
                      <div className="container-fluid">
                          <h2 className="mb-5 text-uppercase">What people are saying...</h2>
-                         {/*<div className="row">*/}
-
-                             {/*<div className="col-lg-4">*/}
-                                 {/*<div className="testimonial-item mx-auto mb-5 mb-lg-0">*/}
-                                     {/*<img className="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg"*/}
-                                          {/*alt=""/>*/}
-                                     {/*<h5>Ricardo Pinto</h5>*/}
-                                     {/*<p className="font-weight-light mb-0">"Baba is a highly innovative Strategist. I had the pleasure of working with Baba to develop, build and scale a major project at a major American fortune 500.<br/></p>*/}
-                                         {/*/!*During this period Baba proved a big-picture thinker, and an effective cross-functional collaborator. <br/>*!/*/}
-                                         {/*/!*His passion and relentless drive and contributions were essential to the success of the project we delivered together. Baba is terrific with challenging assignments, tight deadlines and works well under difficult conditions. ,*!/*/}
-                                         {/*/!*<br/>*!/*/}
-                                         {/*/!*I would love to have the opportunity to work with Baba again."</p>*!/*/}
-                                 {/*</div>*/}
-                             {/*</div>*/}
-                             {/*<div className="col-lg-4">*/}
-                                 {/*<div className="testimonial-item mx-auto mb-5 mb-lg-0">*/}
-                                     {/*<img className="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg"*/}
-                                          {/*alt=""/>*/}
-                                     {/*<h5>Stanley Rogers</h5>*/}
-                                     {/*<p className="font-weight-light mb-0">"Simply put... Baba is an exceptional team player with a brilliant mind and delivers value to the business every single day!"</p>*/}
-                                 {/*</div>*/}
-                             {/*</div>*/}
-                             {/*<div className="col-lg-4">*/}
-                                 {/*<div className="testimonial-item mx-auto mb-5 mb-lg-0">*/}
-                                     {/*<img className="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg"*/}
-                                          {/*alt=""/>*/}
-                                     {/*<h5>Emil Martinez</h5>*/}
-                                     {/*<p className="font-weight-light mb-0">"I have had the pleasure of working with Baba over the past few years and have found him to be highly intelligent, flexible, open to alternative ideas/approaches and most of all passionate in his desire to ensure delivery excellence to all stakeholders"</p>*/}
-                                 {/*</div>*/}
-                             {/*</div>*/}
-                         {/*</div>*/}
+                
                          <div className={'row'}>
                              <div className={'col-lg-12'}>
                              <Slider {...settings}>
