@@ -54,20 +54,19 @@ class Home extends Component {
         window.addEventListener('scroll', this.blur)
     }
 
-    blur(){
+    blur = () => {
         if (window.scrollY > 0) {
             this.setState({blurred:'blur(3px)'})
         }
         else if (window.scrollY === 0){
             this.setState({
                 blurred: 'blur(0px)'
-            },()=>{console.log('blur', this.state.blurred)})
+            })
 
         }
     }
 
      render() {
-   console.log(this.props)
          const {blurred} = this.state
          let settings = {
              dots: true,
